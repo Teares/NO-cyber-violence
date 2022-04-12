@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="zh" class="font-auto">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1" />
+    <link href="https://asset.jiaonang.gq/asset/kicostyle/kico.css" rel="stylesheet" type="text/css" />
+    <script src="https://asset.jiaonang.gq/asset/layer/layer.min.js"></script>
+    <script src="https://asset.jiaonang.gq/browser/Browser.js"></script>
+    <script src="https://asset.jiaonang.gq/browser/anti-selfish-browser.js"></script>
+    <title>反网络暴力</title>
+    <style>
+        /* 适配横屏设备 */
+        @media all and (orientation :landscape) {
+
+            body,
+            html {
+                /* background-color: #3985d2; */
+                background: url('https://i.niupic.com/images/2022/04/12/9YSJ.png') no-repeat;
+                background-size: cover;
+                background-position: center;
+                color: white;
+                padding-left: 150px;
+                padding-right: 150px;
+            }
+
+            a:link {
+                color: white;
+
+            }
+
+            a:hover {
+                color: rgb(54, 54, 54);
+                text-decoration: none;
+            }
+
+            a:visited {
+                color: white;
+            }
+
+            .blockquote {
+                margin: 0 0 1em;
+                line-height: 1.8;
+                font-style: oblique;
+                background: #f5fafd51;
+                padding: 1em 1em 1em 2em;
+                border-left: 5px #ffffff solid;
+            }
+
+            p {
+                line-height: 29px;
+            }
+
+            .hr {
+                margin: 20px 0;
+                border: 0;
+                width: 100%;
+                height: 1px;
+                overflow: hidden;
+                background-color: #ffffff43
+            }
+
+            .svg {
+                display: block;
+                margin: 0 auto;
+                padding-top: 40px;
+                text-align: center;
+                width: 180px;
+                height: 180px;
+            }
+
+            .firsttitle {
+                white-space: nowrap;
+                text-align: center;
+            }
+
+            .smalltitle {
+                padding-top: 50px;
+                font-size: 27px;
+                line-height: 10px;
+            }
+
+            .smalltitle2 {
+                padding-top: 70px;
+                font-size: 27px;
+                line-height: 10px;
+            }
+
+            .mainwords {
+                font-weight: 9px;
+                font-size: 16px;
+            }
+
+            li {
+                line-height: 38px;
+            }
+
+            video {
+                padding-bottom: 20px;
+                width: 100%;
+            }
+
+            .videoinfo {
+                font-size: 13px;
+                color: white;
+                padding-bottom: 20px;
+                line-height: 0px;
+            }
+
+            .footer {
+                text-align: center;
+                padding-bottom: 30px;
+            }
+        }
+
+        /* 适配竖屏设备 */
+        @media all and (orientation :portrait) {
+
+            body,
+            html {
+                background-color: #3985d2;
+                color: white;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .blockquote {
+                margin: 0 0 1em;
+                line-height: 1.8;
+                font-style: oblique;
+                background: #f5fafd20;
+                padding: 1em 1em 1em 2em;
+                border-left: 5px #ffffff solid;
+            }
+
+            .hr {
+                margin: 20px 0;
+                border: 0;
+                width: 100%;
+                height: 1px;
+                overflow: hidden;
+                background-color: #ffffff43
+            }
+
+            a:link {
+                color: white;
+
+            }
+
+            a:hover {
+                color: rgb(54, 54, 54);
+                text-decoration: none;
+            }
+
+            a:visited {
+                color: white;
+            }
+
+            .svg {
+                display: block;
+                margin: 0 auto;
+                padding-top: 40px;
+                text-align: center;
+                width: 180px;
+                height: 180px;
+            }
+
+            .firsttitle {
+                text-align: center;
+                font-size: 27px;
+            }
+
+            .smalltitle {
+                padding-top: 50px;
+                font-size: 27px;
+                line-height: 10px;
+            }
+
+            .smalltitle2 {
+                padding-top: 70px;
+                font-size: 27px;
+                line-height: 10px;
+            }
+
+            .mainwords {
+                font-weight: 9px;
+                font-size: 16px;
+            }
+
+            li {
+                line-height: 38px;
+            }
+
+            video {
+                padding-bottom: 20px;
+                width: 100%;
+            }
+
+            .videoinfo {
+                font-size: 9px;
+                color: white;
+                padding-bottom: 20px;
+                line-height: 0px;
+            }
+
+            .footer {
+                text-align: center;
+                padding-bottom: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <svg t="1649737786757" class="icon svg" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+        p-id="2801" width="128" height="128">
+        <path
+            d="M513.488911 67.427692c-245.531066 0-444.574355 199.044312-444.574355 444.575378s199.043289 444.569238 444.574355 444.569238 444.570261-199.038172 444.570261-444.569238S759.019976 67.427692 513.488911 67.427692zM513.488911 902.830313c-215.85314 0-390.83236-174.975127-390.83236-390.828266 0-215.854163 174.97922-390.833383 390.83236-390.833383 215.854163 0 390.82929 174.97922 390.82929 390.833383C904.3182 727.855186 729.343073 902.830313 513.488911 902.830313z"
+            p-id="2802" fill="#ffffff"></path>
+        <path
+            d="M425.145863 423.658999l35.335786 0c9.754155 0 17.671475-7.916297 17.671475-17.670451l0-70.673619c0-9.750061-7.91732-17.665335-17.671475-17.665335l-35.335786 0c-9.754155 0-17.671475 7.916297-17.671475 17.665335l0 70.673619C407.475412 415.742702 415.391708 423.658999 425.145863 423.658999z"
+            p-id="2803" fill="#ffffff"></path>
+        <path
+            d="M425.145863 582.675666l35.335786 0c9.754155 0 17.671475-7.916297 17.671475-17.670451L478.153124 494.331595c0-9.754155-7.91732-17.665335-17.671475-17.665335l-35.335786 0c-9.754155 0-17.671475 7.91118-17.671475 17.665335l0 70.673619C407.475412 574.759369 415.391708 582.675666 425.145863 582.675666z"
+            p-id="2804" fill="#ffffff"></path>
+        <path
+            d="M566.491055 423.658999l35.33681 0c9.754155 0 17.670451-7.916297 17.670451-17.670451l0-70.673619c0-9.750061-7.916297-17.665335-17.670451-17.665335l-35.33681 0c-9.750061 0-17.665335 7.916297-17.665335 17.665335l0 70.673619C548.82572 415.742702 556.742017 423.658999 566.491055 423.658999z"
+            p-id="2805" fill="#ffffff"></path>
+        <path
+            d="M566.491055 582.675666l35.33681 0c9.754155 0 17.670451-7.916297 17.670451-17.670451L619.498316 494.331595c0-9.754155-7.916297-17.665335-17.670451-17.665335l-35.33681 0c-9.750061 0-17.665335 7.91118-17.665335 17.665335l0 70.673619C548.82572 574.759369 556.742017 582.675666 566.491055 582.675666z"
+            p-id="2806" fill="#ffffff"></path>
+        <path
+            d="M283.799648 423.658999l35.335786 0c9.751085 0 17.666358-7.916297 17.666358-17.670451l0-70.673619c0-9.750061-7.916297-17.665335-17.666358-17.665335l-35.335786 0c-9.754155 0-17.671475 7.916297-17.671475 17.665335l0 70.673619C266.129196 415.742702 274.045493 423.658999 283.799648 423.658999z"
+            p-id="2807" fill="#ffffff"></path>
+        <path
+            d="M743.179197 317.649594l-35.33681 0c-9.754155 0-17.670451 7.916297-17.670451 17.665335l0 70.673619c0 9.754155 7.916297 17.670451 17.670451 17.670451l35.33681 0c9.754155 0 17.665335-7.916297 17.665335-17.670451l0-70.673619C760.844531 325.564867 752.933351 317.649594 743.179197 317.649594z"
+            p-id="2808" fill="#ffffff"></path>
+        <path
+            d="M336.802816 565.005214 336.802816 494.331595c0-9.754155-7.916297-17.665335-17.666358-17.665335l-35.335786 0c-9.754155 0-17.671475 7.91118-17.671475 17.665335l0 70.673619c0 9.754155 7.91732 17.670451 17.671475 17.670451l35.335786 0C328.886519 582.675666 336.802816 574.759369 336.802816 565.005214z"
+            p-id="2809" fill="#ffffff"></path>
+        <path
+            d="M743.179197 476.66626l-35.33681 0c-9.754155 0-17.670451 7.91118-17.670451 17.665335l0 70.673619c0 9.754155 7.916297 17.670451 17.670451 17.670451l35.33681 0c9.754155 0 17.665335-7.916297 17.665335-17.670451L760.844531 494.331595C760.844531 484.57744 752.933351 476.66626 743.179197 476.66626z"
+            p-id="2810" fill="#ffffff"></path>
+        <path
+            d="M707.842387 653.349285 319.135434 653.349285c-9.754155 0-17.670451 7.916297-17.670451 17.670451l0 17.665335c0 9.754155 7.916297 17.671475 17.670451 17.671475l388.706953 0c9.750061 0 17.666358-7.91732 17.666358-17.671475l0-17.665335C725.508745 661.264559 717.592448 653.349285 707.842387 653.349285z"
+            p-id="2811" fill="#ffffff"></path>
+    </svg>
+    <h1 class="firsttitle">网络展现真实,文明彰显素质</h1>
+    <h1 class="smalltitle">网络暴力</h1>
+    <div class="hr"></div>
+    <video
+        src="https://upos-sz-mirrorcos.bilivideo.com/upgcxcode/93/47/97354793/97354793-1-208.mp4?e=ig8euxZM2rNcNbKV7bdVhwdl7wdjhwdVhoNvNC8BqJIzNbfq9rVEuxTEnE8L5F6VnEsSTx0vkX8fqJeYTj_lta53NCM=&uipk=5&nbs=1&deadline=1649754239&gen=playurlv2&os=cosbv&oi=1962912302&trid=c21486bae8d14a7fb95e1cc9978310bdT&platform=html5&upsig=79b972720d984938c50355788479e636&uparams=e,uipk,nbs,deadline,gen,os,oi,trid,platform&mid=0&bvc=vod&nettype=0&bw=406663&orderid=0,1&logo=80000000#vp"
+        muted="muted" autoplay="autoplay" controls="controls" loop="loop"></video>
+    <div class="videoinfo">
+        原作者:小森子魔力酱 UID15931537 BV1Q4411V71M
+    </div>
+    <div class="mainwords">
+        <blockquote class="blockquote">"一个知识越贫乏的人，越是拥有一种莫名其妙的勇气和自豪感。因为知识越是贫乏，所相信的东西就越绝对。"</blockquote>
+        <p>
+            网络暴力是一种<b><em>危害严重、影响恶劣的暴力形式</em></b>，它是指一类由网民发表在网络上的并具有“诽谤性、诬蔑性、侵犯名誉、损害权益和煽动性”这五个特点的言论、文字、图片、视频.这一类言论、文字、图片、视频会针对他人的名誉、权益与精神造成损害，人们习惯称其为“网络暴力”。
+        </p>
+
+        <p>
+            网络暴力能针对当事人的名誉、权益与精神造成损害，而且它已经打破了道德底线，往往也伴随着侵权行为和违法犯罪行为。
+        </p>
+    </div>
+
+    <h1 class="smalltitle2">相关事件</h1>
+    <div class="hr"></div>
+    <div class="mainwords">
+        <ul>
+            <li>
+                <p>2022年1月24日凌晨，河北寻亲男孩刘学州留长文遗书自杀，曾遭网暴“结束一生”。经抢救无效死亡。</p>
+            </li>
+            <li>
+                <p>2021年10月15日，罗小猫猫子在直播间遭遇网友起哄怂恿喝农药自杀，不幸去世。</p>
+            </li>
+            <li>
+                <p>2019年10月4日，韩国明星崔雪莉在家结束了自己的生命，年仅25岁，生前曾多次遭受网络暴力。</p>
+            </li>
+            <li>
+                <p>2018年四川德阳一位女医生不堪网暴最终自杀身亡。</p>
+            </li>
+            <li>
+                <p>B站up主Neuuuu不堪网暴最终自杀身亡。</p>
+            </li>
+            <li>
+                <p>2014年9月，《爸爸2》费曼受伤贝儿被黑。费曼在新西兰录制节目时受伤缝针引发众多关注。对于费曼的受伤，有网友称是因为贝儿所致，并称节目组出于保护贝儿的目的没有说明真相。对此不实言论，护女心切的陆毅忍不住发飙，怒斥网络暴力：“为肮脏服务，为五毛折腰”，并直接表明贝儿与费曼受伤事件完全无关。
+                </p>
+            </li>
+            <li>
+                <p>2009年8月27日，儿童网络暴力事件。暴力发端于一场由成年人策划的批评。当天，中央电视台的“朝闻天下”栏目播发报道，批评了一款名为“摩尔庄园”的网络游戏。
+                </p>
+            </li>
+            <li>
+                <p>
+                    像这样的网络暴力实际上每时每刻都正在发生......
+                </p>
+            </li>
+        </ul>
+    </div>
+
+    <h1 class="smalltitle2">相关法律</h1>
+    <div class="hr"></div>
+    <div class="mainwords">
+        <blockquote class="blockquote">
+            治安管理处罚法第二十五条：<br>
+            有下列行为之一的，处五日以上十日以下拘留，可以并处五百元以下罚款;情节较轻的，处五日以下拘留或者五百元以下罚款：
+            <ul>
+                <li>
+                    (一)散布谣言，谎报险情、疫情、警情或者以其他方法故意扰乱公共秩序的;
+                </li>
+                <li>
+                    (二)投放虚假的爆炸性、毒害性、放射性、腐蚀性物质或者传染病病原体等危险物质扰乱公共秩序的
+                </li>
+                <li>
+                    (三)扬言实施放火、爆炸、投放危险物质扰乱公共秩序的。
+                </li>
+            </ul>
+        </blockquote>
+        <blockquote class="blockquote">
+            <p>
+                《关于办理信息网络实施诽谤等刑事案件的司法解释》：<br>
+                司法解释规定，利用信息网络诽谤他人，同一诽谤信息实际被点击、浏览次数达到5000次以上，或者被转发次数达到500次以上的，应当认定为刑法第246条第1款规定的“情节严重”，可构成诽谤罪;如果行为人明知是捏造的损害他人名誉的事实，实施了在信息网络上散布的行为，主观上故意，客观上造成实际损害，情节恶劣的，以诽谤罪定罪处罚。
+            </p>
+            <p>
+                <a
+                    href="https://baike.baidu.com/item/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%88%91%E6%B3%95/721359?fr=aladdin#3">《刑法》</a>第246条诽谤罪，是指故意捏造并散布虚构的事实，足以贬损他人人格，破坏他人名誉，情节严重的行为。所谓情节严重，主要是指:
+            </p>
+            <ul>
+                <li>
+                    (一)多次捏造事实诽谤他人的;;
+                </li>
+                <li>
+                    (二)捏造事实造成他人人格、名誉严重损害的;
+                </li>
+                <li>
+                    (三)捏造事实诽谤他人造成恶劣影响的;
+                </li>
+                <li>
+                    (四)诽谤他人致其精神失常或导致被害人自杀的等情况。;
+                </li>
+            </ul>
+        </blockquote>
+        ......
+    </div>
+
+    <h1 class="smalltitle2">与我们一起抵制网络暴力</h1>
+    <div class="hr"></div>
+    <div class="mainwords">
+        <p>
+            我国网络暴力非常盛行，因网络暴力而引发的事件也越来越多。受害人虽然可以通过法律，维护自己的合法利益，但由于网络的无限扩散性，十分容易使其所受的伤害很难地彻底治愈。
+        </p>
+        <p>
+            网络本应是我们茶余饭后的休闲之处，而不应充满着无尽的谩骂与诋毁。
+        </p>
+        <p>
+            请您与我们一起，一起抵制网络暴力的发生！一起让更多的人意识到，网络侮辱、诽谤是严重的犯罪行为，在网络上发布信息时，应当三思而后行。
+        </p>
+    </div>
+
+    <div class="hr"></div>
+    <p>
+        据2017年中国互联网络信息(CNNIC)中心统计,截止2016年12月,中国网民规模达7.31亿,共计新增网民4299万人。
+    </p>
+    <p>
+        2021年，已有超七成受访大学生自认受到网络暴力影响。“盲目站队”的背后，是“法不责众”的错觉!
+    </p>
+    <div class="hr"></div>
+    <div class="footer">
+        请不要让肆意言论成为伤害他人的刀刃<br>
+        Copyright © 反网络暴力 2022 版权所有
+    </div>
+</body>
+
+</html>
